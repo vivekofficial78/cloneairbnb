@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="StyleSheet" href="Home.css">
+    <script src="/Login-and-Signup-main/public/login.js" defer></script>
+</head>
+<body>
+    {{!-- <form action="/Signup" method="post">
+    <section id="SelectButton" class="selectButtonArea">
+    <button id="SelectRegister" class="selectButton" onclick="openRegister();">Register</button>
+    <button id="SelectLogin" class="selectButton" onclick="openLogin();">Login</button>
+  </section>
+  <section id="RegisterForm" class="sectionForm"> --}}
+    {{!-- <div class="formHeader">
+      <h1 class="formHeading">Register</h1>
+      <button class="backBtn" onclick="backBegin();">&#10006;</button>
+    </div> --}}
+    <form id="Register" action="#">
+      <div class="inputSection">
+        <h2 href="#/Login-and-Signup-main/view/Sign.hbs">Signup Page</h2>
+        <h2 href="#/Login-and-Signup-main/view/Login.hbs">Login Page</h2>
+        <label for="name">Name: </label>
+        <input type="text" id="name" class="inputText" required placeholder="Name">
+        <span class="focus-border"></span>
+      </div>
+      
+      <div class="inputSection">
+        <label for="Email">Email: </label>
+        <input type="email" id="Email" class="inputText" required placeholder="email">
+        <span class="focus-border"></span>
+      </div>
+      <div class="inputSection">
+        <label for="Password">Password: </label>
+        <input type="password" id="Password" class="inputText" required placeholder="password">
+        <span class="focus-border"></span>
+      </div>
+      <div class="inputSection">
+        <label for="C-Password">C-Password: </label>
+        <input type="password" id="C-Password" class="inputText" required placeholder="password"><br><br>
+        <span class="focus-border"></span>
+      </div>
+      <div class="inputSection">
+        <label for="Phone">Phone </label>
+        <input type="text" id="Phone" class="inputText" required placeholder="Phone">
+        <span class="focus-border"></span>
+      </div>
+      <div class="inputSection">
+        <label for="Address">Address </label>
+        <input type="text" id="Address" class="inputText" required placeholder="Address">
+        <span class="focus-border"></span>
+      </div>
+      <div class="inputSection">
+    <label for="City">Choose City </label>
+        <select name="city" id="city">
+            <option>Choose</option>
+        <option value="delhi">delhi</option>
+        <option value="mumbai">mumbai</option>
+        <option value="chwennai">chennai</option>
+        <option value="bangluru">bangluru</option>
+        <option value="hadrabad">hadrabad</option>
+      </select>
+      </div>
+      <div class="inputSection">
+        <label for="State ">State </label>
+        <input type="text" id="State " class="inputText" required placeholder="State ">
+        <span class="focus-border"></span>
+      </div>
+    <label for="account">Choose Account Type </label>
+     <select name="cars" id="cars">
+        <option >Choose</option>
+        <option value="Tourist">Tourist</option>
+        <option value="Owner">Owner</option>
+      </select><br>
+      <img class="logoImg" src="#" alt="Your browser does not support img">
+      {{!-- <div class="acceptSection">
+        <input id="AcceptPolicy" class="formBox" type="checkbox" required>
+        <span class="formText">You have read our terms and policy and accept them.</span><br>
+        <input id="AcceptNewsletter" class="formBox" type="checkbox">
+        <span class="formText">Allow us to send you updates and our weekly newsletter.</span>
+      </div> --}}
+      <div class="formFooter">
+        <a href="Home">Register</a>
+      </div>
+    </form>
+    <div class="optionalSection">
+      <span class="inputText sizeBack">Already have an account?</span>
+      {{!-- <button class="changeButton" type="button" id="GoLogin" onclick="openLogin();">Login</button> --}}
+
+      <a href="Login">Login</a>
+    </div>
+    <div class="boxShadow"></div>
+  </section>
+ 
+    </form>
+</body>
+</html>
